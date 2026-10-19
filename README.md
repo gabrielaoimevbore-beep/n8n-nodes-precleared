@@ -68,4 +68,4 @@ Precleared gives decision support with sources. It is not legal advice.
 
 ## Version history
 
-- **0.1.0**: first release, with Check Recipient, Get Usage and Get Receipt.
+- **0.1.1**: first version on npm, with Check Recipient, Get Usage and Get Receipt. (0.1.0 was tagged on GitHub but not published.)
