@@ -1,0 +1,19 @@
+{
+	"node": "n8n-nodes-precleared",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Marketing & Content", "Sales"],
+	"alias": ["cold email", "email compliance", "GDPR", "PECR", "CAN-SPAM", "CASL", "consent", "outreach"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://github.com/gabrielaoimevbore-beep/n8n-nodes-precleared?tab=readme-ov-file#credentials"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://github.com/gabrielaoimevbore-beep/n8n-nodes-precleared?tab=readme-ov-file"
+			}
+		]
+	}
+}
