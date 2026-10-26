@@ -32,7 +32,7 @@ Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes
 
 ## Credentials
 
-1. Get a free API key at [precleared.dev/get-key](https://precleared.dev/get-key). No card is needed. A free key gives 25 checks a day; a pack adds 2,000 checks for £39 and never expires.
+1. Get a free API key at [precleared.dev/get-key](https://precleared.dev/get-key). No card is needed. A new key gets 14 days at 100 checks a day, then 25 a day free. For more, £15 a month keeps 100 a day, or a pack adds 2,000 checks for £39 and never expires.
 2. In n8n, create a **Precleared API** credential and paste the key. It starts with `pc_live_`.
 3. n8n tests the key against `GET /api/v1/key`, which doesn't use a check.
 
