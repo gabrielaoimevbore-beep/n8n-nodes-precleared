@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-precleared",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Check whether a cold or marketing email may be sent to a recipient, with the deciding rule, footer requirements and a signed receipt. Covers the UK, US, Canada, Germany, France, Australia, Ireland and the Netherlands.",
   "license": "MIT",
   "homepage": "https://precleared.dev",
