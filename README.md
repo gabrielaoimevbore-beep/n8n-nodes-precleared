@@ -68,5 +68,6 @@ Precleared gives decision support with sources. It is not legal advice.
 
 ## Version history
 
+- **0.1.3**: the README now mentions the 14-day trial and the monthly plan. The node itself is unchanged.
 - **0.1.2**: the codex file names the node in full (`n8n-nodes-precleared.precleared`), as n8n's review asked. The node itself is unchanged.
 - **0.1.1**: first version on npm, with Check Recipient, Get Usage and Get Receipt. (0.1.0 was tagged on GitHub but not published.)
