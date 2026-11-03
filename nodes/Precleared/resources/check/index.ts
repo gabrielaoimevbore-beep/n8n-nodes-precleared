@@ -6,7 +6,7 @@ const showForCheck = {
 	operation: ['checkRecipient'],
 };
 
-// The eight countries Precleared has rules for. Use an expression to send any
+// The twelve countries Precleared has rules for. Use an expression to send any
 // other two-letter code; the check then says it has no rule for that country.
 const countryOptions: INodePropertyOptions[] = [
 	{ name: 'Australia', value: 'AU' },
@@ -14,7 +14,11 @@ const countryOptions: INodePropertyOptions[] = [
 	{ name: 'France', value: 'FR' },
 	{ name: 'Germany', value: 'DE' },
 	{ name: 'Ireland', value: 'IE' },
+	{ name: 'Italy', value: 'IT' },
+	{ name: 'Latvia', value: 'LV' },
 	{ name: 'Netherlands', value: 'NL' },
+	{ name: 'Spain', value: 'ES' },
+	{ name: 'United Arab Emirates', value: 'AE' },
 	{ name: 'United Kingdom', value: 'GB' },
 	{ name: 'United States', value: 'US' },
 ];
@@ -179,6 +183,21 @@ export const checkDescription: INodeProperties[] = [
 		},
 		options: [
 			{
+				displayName: 'Company Name',
+				name: 'companyName',
+				type: 'string',
+				default: '',
+				placeholder: 'Acme Ltd',
+				description:
+					"The recipient's company or organisation name, if you have it. For UK recipients it helps find the company at Companies House.",
+				routing: {
+					send: {
+						type: 'body',
+						property: 'company_name',
+					},
+				},
+			},
+			{
 				displayName: 'Company Number',
 				name: 'companyNumber',
 				type: 'string',
@@ -283,11 +302,13 @@ export const checkDescription: INodeProperties[] = [
 				name: 'senderCountry',
 				type: 'options',
 				options: [
+					{ name: 'Canada', value: 'CA' },
+					{ name: 'United Arab Emirates', value: 'AE' },
 					{ name: 'United Kingdom', value: 'GB' },
 					{ name: 'United States', value: 'US' },
 				],
 				default: 'GB',
-				description: 'Where your business is based. Not the recipient.',
+				description: 'Where your business is based. Not the recipient. Canadian senders must also meet CASL.',
 				routing: {
 					send: {
 						type: 'body',
