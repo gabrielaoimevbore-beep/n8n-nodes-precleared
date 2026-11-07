@@ -6,17 +6,19 @@ const showForCheck = {
 	operation: ['checkRecipient'],
 };
 
-// The twelve countries Precleared has rules for. Use an expression to send any
+// The fourteen countries Precleared has rules for. Use an expression to send any
 // other two-letter code; the check then says it has no rule for that country.
 const countryOptions: INodePropertyOptions[] = [
 	{ name: 'Australia', value: 'AU' },
 	{ name: 'Canada', value: 'CA' },
+	{ name: 'Egypt', value: 'EG' },
 	{ name: 'France', value: 'FR' },
 	{ name: 'Germany', value: 'DE' },
 	{ name: 'Ireland', value: 'IE' },
 	{ name: 'Italy', value: 'IT' },
 	{ name: 'Latvia', value: 'LV' },
 	{ name: 'Netherlands', value: 'NL' },
+	{ name: 'Qatar', value: 'QA' },
 	{ name: 'Spain', value: 'ES' },
 	{ name: 'United Arab Emirates', value: 'AE' },
 	{ name: 'United Kingdom', value: 'GB' },
@@ -303,6 +305,7 @@ export const checkDescription: INodeProperties[] = [
 				type: 'options',
 				options: [
 					{ name: 'Canada', value: 'CA' },
+	{ name: 'Egypt', value: 'EG' },
 					{ name: 'United Arab Emirates', value: 'AE' },
 					{ name: 'United Kingdom', value: 'GB' },
 					{ name: 'United States', value: 'US' },

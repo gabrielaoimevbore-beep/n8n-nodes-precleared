@@ -2,7 +2,7 @@
 
 This is an n8n community node for [Precleared](https://precleared.dev). It checks whether a cold or marketing email may be sent to a recipient before you send it. Each check returns a verdict, the rule that decided it with its legal source, what the email's footer must include, a next step and a signed receipt.
 
-Precleared covers the UK (PECR and UK GDPR), the US (CAN-SPAM), Canada (CASL), Germany, France, Australia, Ireland, the Netherlands, Spain, Italy, Latvia and the United Arab Emirates. Nothing is sent to the recipient.
+Precleared covers the UK (PECR and UK GDPR), the US (CAN-SPAM), Canada (CASL), Germany, France, Australia, Ireland, the Netherlands, Spain, Italy, Latvia, the United Arab Emirates, Egypt and Qatar. Nothing is sent to the recipient.
 
 [n8n](https://n8n.io/) is a [fair-code licensed](https://docs.n8n.io/sustainable-use-license/) workflow automation platform.
 
@@ -68,6 +68,7 @@ Precleared gives decision support with sources. It is not legal advice.
 
 ## Version history
 
+- **0.1.5**: Egypt and Qatar join the recipient country list (fourteen countries). The answers come from the server, so older versions get the new countries too.
 - **0.1.4**: twelve countries in the recipient country list (Spain, Italy, Latvia and the United Arab Emirates added), Canada and the United Arab Emirates as sender countries, and a Company Name field. The answers themselves come from the server, so older versions get the new countries too.
 - **0.1.3**: the README now mentions the 14-day trial and the monthly plan. The node itself is unchanged.
 - **0.1.2**: the codex file names the node in full (`n8n-nodes-precleared.precleared`), as n8n's review asked. The node itself is unchanged.
